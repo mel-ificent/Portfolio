@@ -18,13 +18,9 @@ header{
 
 }
 
-header h1 {
-    margin-top: 20px;
-    font-size: 20px;
-    color:var(--darkcolor);
-    text-align:center;
-}
-/*Navigation styling*/
+
+/*Navigation styling, created separate items for social media links, Header, and page links 
+so that they would display left, center, and right respectively*/
 nav{
     display:flex;
     justify-content: space-between;
@@ -39,19 +35,26 @@ header nav ul li {
     
 }
 
-
 nav a{
     text-decoration: none;
     color: var(--darkcolor);
 }
 
-.social{
+header h1 {
     font-size: 20px;
+    color:var(--darkcolor);
+    text-align:center;
+}
+
+#social{
+    margin-top:5px;
+    font-size: 16px;
     }
 
 
-.pagelinks{
-    font-size: 20px;
+#pagelinks{
+    margin-top:5px;
+    font-size: 16px;
 }
 
 
@@ -59,8 +62,82 @@ nav a{
 
 
 
+/*section styling to separate each topic or navigational piece*/
+#Splash{
+    min-height:400px;
+    padding:20px;
+    background-color:var(--darkcolor);
+    color:var(--white);
+}
+
+#About{
+    min-height:400px;
+    padding:20px;
+    background-color:var(--mediumcolor);
+    color:var(--white);
+}
+
+#Portfolio{
+    min-height:400px;
+    padding:20px;
+    background-color:var(--lightcolor);
+    color:var(--darkcolor);
+
+}
+#Portfolio a{
+    text-decoration: none;
+}
+
+/*Portfolio samples*/
+#Portfolio div{
+    padding:20px;
+    margin: 0 5%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*sizing of work container that will hold image link to portfolio items, keeping 1-2 items per row*/
+.work{
+
+    border-style: solid;
+    border-width: 1px;
+    padding:5px;
+    flex: 0 0 50%;
+}
+
+/*The first portfolio item link/image is larger than the other items and will take up 100% of the work container*/
+div .work:nth-child(1){
+    flex: 1 100%;
+}
+
+/*Images for portfolio items will take up the entire space of their work container*/
+.work a img{
+    width:100%;
+
+}
 
 
-main{
-    display: flex;
+
+
+#Contact{
+    min-height:400px;
+    padding:20px;
+    background-color:var(--neutralcolor);
+    color:var(--darkcolor);
+}
+
+
+
+/*Footer styling*/
+
+footer{
+padding:20px;
+color:var(--darkcolor);
+font-size:8px;
+text-align: center;
+
 }
