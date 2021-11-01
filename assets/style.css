@@ -18,6 +18,7 @@ header h1 {
     font-size: 20px;
     color:var(--darkcolor);
     text-align:center;
+    margin:20px 0;
 }
 
 /*Navigation page links to be spaced out across header*/
@@ -50,7 +51,6 @@ nav a:hover{
 
 /*Splash content and styling*/
 #Splash{
-    min-height:400px;
     padding:20px;
     background-color:var(--lightcolor);
     color:var(--darkcolor);
@@ -58,20 +58,22 @@ nav a:hover{
     justify-content: space-around;
     align-items:center;
 }
+/*Placed header overtop image container*/
 #Splash h2{
-    position:relative;
-    display:inline;
-    padding:5px;
- top: 50%; left:50%;
+    padding:20px;
     font-size:36px;
+    position:absolute;
+    flex:auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
 }
 #Splash p{
     font-size:16px;
 }
 #splashImage{
-    display:block;
     flex:auto;
     border:1px solid var(--white);
+    z-index: 1;
 }
 
 #Splash img{
@@ -135,8 +137,8 @@ nav a:hover{
 
 /*the first portfolio item will be larger than the subsequent items*/
 #portfolioBlock .work:nth-child(1){
-padding:5px;
-flex: 100%;
+    padding:5px;
+    flex: 100%;
 }
 
 /*Images for portfolio items will take up the entire space of their work container*/
@@ -148,7 +150,7 @@ flex: 100%;
 
 /*added some styling when the user hovers over the portfolio items*/
 .work img:hover {
-    border: 4px solid var(--mediumcolor);
+    box-shadow: 3px 3px 3px 3px var(--lightcolor);
 }
 
 /*Label styling for each work item*/
@@ -157,7 +159,7 @@ position:relative;
 display:inline;
 padding:5px;
 top: 40px; left: 30px;
-background-color:var(--lightcolor);
+background-color: rgba(255, 255, 255, 0.6)
 
 }
 
@@ -176,15 +178,21 @@ footer{
 padding:20px;
 color:var(--white);
 background-color:var(--darkcolor);
-font-size:8px;
+font-size:12px;
 text-align: center;
 
 }
 #social{
     margin-top:5px;
     font-size: 16px;
+    display:flex;
+    justify-content:center;
     }
-
+#social ul li{
+    list-style-type: none;
+    display:inline;
+    color:var(--white);
+}
     /*social media icons */
 .fa {
     padding: 5px;
