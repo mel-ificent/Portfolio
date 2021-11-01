@@ -77,14 +77,14 @@ header h1 {
     color:var(--white);
 }
 /*Start Portfolio section styling */
-/*Portfolio Highlight item*/
+/*Portfolio Highlight item
 #highlightWork{
     display:block;
     padding:20px 20px 0px 20px;
     background-color:var(--lightcolor);
     justify-content: left;
 
-}
+}*/
 
 #Portfolio{
     padding:0px 20px 20px 20px;
@@ -130,11 +130,15 @@ header h1 {
 
 }
 
-
 /*sizing of work container that will hold image link to portfolio items, keeping 1-2 items per row*/
 .work{
     padding:5px;
     flex: 50%;
+}
+
+#portfolioBlock .work:nth-child(1){
+padding:5px;
+flex: 100%;
 }
 
 /*Images for portfolio items will take up the entire space of their work container*/
@@ -163,4 +167,11 @@ color:var(--darkcolor);
 font-size:8px;
 text-align: center;
 
+}
+
+/*For smaller screen sizes such as phones and tablets, the portfolio items will fall into a column rather than row*/
+@media screen and (max-width: 768px) {
+ #Portfolio{
+      flex-direction: column;
+    }
 }
