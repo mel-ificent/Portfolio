@@ -13,58 +13,69 @@ body{
     background-color:var(--white);
 }
 
-
-
-
-/*Navigation styling, created separate items for social media links, Header, and page links 
-so that they would display left, center, and right respectively*/
-nav{
-    display:flex;
-    justify-content: space-between;
-    margin:5px 20px 5px 20px;
-
-}
-
-header nav ul li {
-
-    list-style-type: none;
-    display:inline-block;
-    
-}
-
-nav a{
-    text-decoration: none;
-    color: var(--darkcolor);
-}
-
+/*header title styling */
 header h1 {
     font-size: 20px;
     color:var(--darkcolor);
     text-align:center;
 }
 
-#social{
-    margin-top:5px;
+/*Navigation page links to be spaced out across header*/
+nav ul{
+    display:flex;
+    justify-content:space-evenly;
+    margin:5px 20px 5px 20px;
     font-size: 16px;
-    }
 
-
-#pagelinks{
-    margin-top:5px;
-    font-size: 16px;
 }
 
+header nav ul li {
+    list-style-type: none;
+    display:inline-block;
+}
 
-
-
-
+nav a{
+    text-decoration: none;
+    color: var(--darkcolor);
+}
+/*highlight and change font color when hover over a navigation link 
+nav ul li:hover{
+background-color:var(--lightcolor);
+}*/
+nav a:hover{
+ text-shadow: 1px 1px 3px var(--mediumcolor);
+    }
 
 /*section styling to separate each topic or navigational piece*/
+
+/*Splash content and styling*/
 #Splash{
     min-height:400px;
     padding:20px;
     background-color:var(--lightcolor);
     color:var(--darkcolor);
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+#Splash h2{
+    position:relative;
+    display:inline;
+    padding:5px;
+ top: 50%; left:50%;
+    font-size:36px;
+}
+#Splash p{
+    font-size:16px;
+}
+#splashImage{
+    display:block;
+    flex:auto;
+    border:1px solid var(--white);
+}
+
+#Splash img{
+    width:100%;
 }
 
 #About{
@@ -169,10 +180,27 @@ font-size:8px;
 text-align: center;
 
 }
+#social{
+    margin-top:5px;
+    font-size: 16px;
+    }
+
+    /*social media icons */
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+
+  }
 
 /*For smaller screen sizes such as phones and tablets, the portfolio items will fall into a column rather than row*/
 @media screen and (max-width: 768px) {
  #Portfolio{
       flex-direction: column;
     }
+
 }
