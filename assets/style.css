@@ -76,46 +76,69 @@ header h1 {
     background-color:var(--mediumcolor);
     color:var(--white);
 }
+/*Start Portfolio section styling */
+/*Portfolio Highlight item*/
+#highlightWork{
+    display:block;
+    padding:20px 20px 0px 20px;
+    background-color:var(--lightcolor);
+    justify-content: left;
+
+}
 
 #Portfolio{
-    min-height:400px;
-    padding:20px;
+    padding:0px 20px 20px 20px;
     background-color:var(--lightcolor);
     color:var(--darkcolor);
-
+    display:flex;
+    align-items:center;
 }
 #Portfolio a{
     text-decoration: none;
 }
 
-/*Portfolio samples*/
-#Portfolio div{
+
+
+/*Portfolio section header and subtext to be next to portfolio pieces*/
+
+#portfolioHeader{
     padding:20px;
-    margin: 0 5%;
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
+    flex:auto;
+    font-size:36px;
 
 }
+
+#portfolioHeader h2{
+    font-size:50px;
+}
+
+#portfolioHeader p{
+    margin-top:15px;
+    font-size:16px;
+}
+
+
+
+
+/*Portfolio samples*/
+#Portfolio #portfolioBlock{
+    padding:5px 0px;
+    display:flex;
+    flex-wrap:wrap;
+
+
+
+}
+
 
 /*sizing of work container that will hold image link to portfolio items, keeping 1-2 items per row*/
 .work{
-
-    border-style: solid;
-    border-width: 1px;
     padding:5px;
-    flex: 0 0 50%;
-}
-
-/*The first portfolio item link/image is larger than the other items and will take up 100% of the work container*/
-div .work:nth-child(1){
-    flex: 1 100%;
+    flex: 50%;
 }
 
 /*Images for portfolio items will take up the entire space of their work container*/
-.work a img{
+.work a img, #highlightWork a img{
     width:100%;
 
 }
