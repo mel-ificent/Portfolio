@@ -1,4 +1,9 @@
 
+/*global styling */
+*{
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height:1.5;
+}
 /*define variables*/
 :root{
     --darkcolor: #131e53;
@@ -10,7 +15,7 @@
 
 }
 body{
-    background-color:var(--white);
+    background-color:var(--lightcolor);
 }
 
 /*header title styling */
@@ -44,7 +49,7 @@ nav ul li:hover{
 background-color:var(--lightcolor);
 }*/
 nav a:hover{
- text-shadow: 1px 1px 3px var(--mediumcolor);
+ text-shadow: 1px 1px 3px var(--white);
     }
 
 /*section styling to separate each topic or navigational piece*/
@@ -52,7 +57,7 @@ nav a:hover{
 /*Splash content and styling*/
 #Splash{
     padding:20px;
-    background-color:var(--lightcolor);
+    background-color:var(--white);
     color:var(--darkcolor);
     display:flex;
     justify-content: space-around;
@@ -72,7 +77,6 @@ nav a:hover{
 }
 #splashImage{
     flex:auto;
-    border:1px solid var(--white);
     z-index: 1;
 }
 
@@ -80,12 +84,33 @@ nav a:hover{
     width:100%;
 }
 
+/*Styling for the About Me section */
 #About{
-    min-height:400px;
     padding:20px;
     background-color:var(--mediumcolor);
     color:var(--white);
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
 }
+#aboutContent{
+    padding:20px;
+    display:flex;
+    display:block;
+}
+
+#aboutConent h2{
+    display:inline-block;
+    font-size:36px;
+}
+#aboutConent p{
+    font-size:16px;
+}
+
+#About img{
+    max-width:300px;
+}
+
 /*Start Portfolio section styling */
 
 #Portfolio{
@@ -150,7 +175,9 @@ nav a:hover{
 
 /*added some styling when the user hovers over the portfolio items*/
 .work img:hover {
-    box-shadow: 3px 3px 3px 3px var(--lightcolor);
+    box-shadow: inset 0px 0px 8px
+    var(--mediumcolor), 0px 0px 15px
+    var(--mediumcolor);
 }
 
 /*Label styling for each work item*/
@@ -163,27 +190,31 @@ background-color: rgba(255, 255, 255, 0.6)
 
 }
 
+/*styling for the contact section*/
 #Contact{
-    min-height:400px;
-    padding:20px;
+    padding:20px 20px 30px 20px;
     background-color:var(--mediumcolor);
     color:var(--white);
-}
-
-
-
-/*Footer styling*/
-
-footer{
-padding:20px;
-color:var(--white);
-background-color:var(--darkcolor);
-font-size:12px;
-text-align: center;
+    text-align:center;
 
 }
+
+#Contact span{
+    font-size:20px;
+}
+
+#Contact h2{
+    font-size: 24px;
+    margin:20px 0;
+    
+}
+
+#Contact p{
+    font-size: 16px;
+}
+
 #social{
-    margin-top:5px;
+    margin:5px;
     font-size: 16px;
     display:flex;
     justify-content:center;
@@ -202,13 +233,30 @@ text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
+    color:var(--white);
 
   }
+
+/*Footer styling*/
+
+footer{
+padding:20px;
+color:var(--white);
+background-color:var(--darkcolor);
+font-size:12px;
+text-align: center;
+
+}
+
 
 /*For smaller screen sizes such as phones and tablets, the portfolio items will fall into a column rather than row*/
 @media screen and (max-width: 768px) {
  #Portfolio{
       flex-direction: column;
     }
+
+#About{
+    flex-direction: column;
+  }
 
 }
