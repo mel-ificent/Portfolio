@@ -7,15 +7,15 @@
 /*define variables*/
 :root{
     --darkcolor: #131e53;
-    --mediumcolor:#627bab;
+    --mediumcolor:#749ec8;
     --lightcolor: #a9b5c9;
     --neutralcolor: #c2bebc;
-    --white: #edeef0;
+    --white: #f2f3f7;
 
 
 }
 body{
-    background-color:var(--lightcolor);
+    background-color:var(--white);
 }
 
 /*header title styling */
@@ -49,14 +49,14 @@ nav ul li:hover{
 background-color:var(--lightcolor);
 }*/
 nav a:hover{
- text-shadow: 1px 1px 3px var(--white);
+ text-shadow: 1px 1px 3px var(--lightcolor);
     }
 
 /*section styling to separate each topic or navigational piece*/
 
 /*Splash content and styling*/
 #Splash{
-    padding:20px;
+
     background-color:var(--white);
     color:var(--darkcolor);
     display:flex;
@@ -109,6 +109,10 @@ nav a:hover{
 
 #About img{
     max-width:300px;
+    border:6px solid var(--white);
+    border-bottom-width:50px;
+    box-shadow: 5px 8px 18px var(--darkcolor);
+    transform: rotate(-5deg);
 }
 
 /*Start Portfolio section styling */
@@ -239,8 +243,8 @@ background-color: rgba(255, 255, 255, 0.6)
 
 footer{
 padding:20px;
-color:var(--white);
-background-color:var(--darkcolor);
+color:var(--darkcolor);
+background-color:var(--white);
 font-size:12px;
 text-align: center;
 
