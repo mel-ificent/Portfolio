@@ -224,18 +224,16 @@ background-color: rgba(255, 255, 255, 0.6)
     display:inline;
     color:var(--white);
 }
-    /*social media icons */
-.fa {
-    padding: 5px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
+#social a{
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    color:var(--white);
+}
 
-  }
+#social img{
+    width:30px;
+    margin:5px;
+    padding:2px;
+
+}
 
 /*Footer styling*/
 
