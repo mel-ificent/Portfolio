@@ -1,7 +1,7 @@
 
 /*global styling */
 *{
-   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family: 'Garamond';
     line-height:1.5;
 }
 /*define variables*/
@@ -9,18 +9,22 @@
     --darkcolor: #131e53;
     --mediumcolor:#749ec8;
     --lightcolor: #a9b5c9;
-    --neutralcolor: #c2bebc;
     --white: #f2f3f7;
 
 
 }
+/*Adds a smooth transition when navigating to different sections of the page*/
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color:var(--white);
 }
 
 /*header title styling */
 header h1 {
-    font-size: 20px;
+    font-size: 24px;
     color:var(--darkcolor);
     text-align:center;
     margin:20px 0;
@@ -31,7 +35,7 @@ nav ul{
     display:flex;
     justify-content:space-evenly;
     margin:5px 20px 5px 20px;
-    font-size: 16px;
+    font-size: 20px;
 
 }
 
@@ -44,10 +48,7 @@ nav a{
     text-decoration: none;
     color: var(--darkcolor);
 }
-/*highlight and change font color when hover over a navigation link 
-nav ul li:hover{
-background-color:var(--lightcolor);
-}*/
+
 nav a:hover{
  text-shadow: 1px 1px 3px var(--lightcolor);
     }
@@ -66,18 +67,18 @@ nav a:hover{
 /*Placed header overtop image container*/
 #Splash h2{
     padding:20px;
-    font-size:36px;
+    font-size:50px;
     position:absolute;
     flex:auto;
     background-color: rgba(255, 255, 255, 0.6);
-    z-index: 2;
+
 }
 #Splash p{
     font-size:16px;
 }
 #splashImage{
     flex:auto;
-    z-index: 1;
+
 }
 
 #Splash img{
@@ -85,6 +86,7 @@ nav a:hover{
 }
 
 /*Styling for the About Me section */
+/*About contains image and aboutContent */
 #About{
     padding:20px;
     background-color:var(--mediumcolor);
@@ -93,29 +95,35 @@ nav a:hover{
     align-items:center;
     justify-content:space-evenly;
 }
+
+/*About Content contains the paragraphs and header */
 #aboutContent{
     padding:20px;
+    margin:20px;
     display:flex;
     display:block;
 }
 
-#aboutConent h2{
+#aboutContent h2{
     display:inline-block;
-    font-size:36px;
+    font-size:50px;
 }
-#aboutConent p{
+#aboutContent p{
     font-size:16px;
 }
 
+/*styled image to look like a polaroid image*/
 #About img{
     max-width:300px;
     border:6px solid var(--white);
     border-bottom-width:50px;
     box-shadow: 5px 8px 18px var(--darkcolor);
     transform: rotate(-5deg);
+    margin:20px;
 }
 
 /*Start Portfolio section styling */
+/*Portfolio container has portfolioHeader and portfolioBlock and items*/
 
 #Portfolio{
     padding:0px 20px 20px 20px;
@@ -135,8 +143,6 @@ nav a:hover{
 #portfolioHeader{
     padding:20px;
     flex:auto;
-    font-size:36px;
-
 }
 
 #portfolioHeader h2{
@@ -151,7 +157,7 @@ nav a:hover{
 
 
 
-/*Portfolio samples*/
+/*portfolioBlock is the container with .work as items*/
 #portfolioBlock{
     padding:5px 0px;
     display:flex;
@@ -173,8 +179,7 @@ nav a:hover{
 /*Images for portfolio items will take up the entire space of their work container*/
 .work a img, #highlightWork a img{
     width:100%;
-    z-index:0;
-
+ 
 }
 
 /*added some styling when the user hovers over the portfolio items*/
@@ -184,7 +189,7 @@ nav a:hover{
     var(--mediumcolor);
 }
 
-/*Label styling for each work item*/
+/*Label styling over each work item*/
 .work h3{
 position:relative;
 display:inline;
@@ -202,13 +207,13 @@ background-color: rgba(255, 255, 255, 0.6)
     text-align:center;
 
 }
-
+/*styling to add icons next to phone and email*/
 #Contact span{
     font-size:20px;
 }
 
 #Contact h2{
-    font-size: 24px;
+    font-size: 50px;
     margin:20px 0;
     
 }
@@ -217,6 +222,7 @@ background-color: rgba(255, 255, 255, 0.6)
     font-size: 16px;
 }
 
+/*social container holding social media icons and links*/
 #social{
     margin:5px;
     font-size: 16px;
