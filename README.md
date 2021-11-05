@@ -10,7 +10,7 @@
 
 ## Demo
 
-![Melissa Portfolio](./images/MyPortfolio.gif)
+![Melissa Portfolio](./Images/MyPortfolio.gif)
 
 ## Check it out!
 👉 [Link to the Application](https://mel-ificent.github.io/Portfolio/)
