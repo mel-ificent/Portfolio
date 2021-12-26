@@ -81,32 +81,54 @@
 
 
             <div id="portfolioBlock">
-                <section class="work">
-                    <h3>You Lucky Dog</h3>
-
+                <section class="work" onmouseover="highlightImg()" onmouseout="highlightImgReset()">
+                   <div class="title">
+                        <h2>You Lucky Dog</h2>
+                    </div>
+                    <div class="deployedLink">
                         <a href="https://jddlwlr.github.io/You-Lucky-Dog/" target="_blank">
-                            <img id="img-highlight" onmouseover="highlightImg()" onmouseout="highlightImgReset()" src="./Images/tablet.jpg" alt="Highlighted Project"/>
+                            <h3>Link to Deployed Application</h3>
+                        </a>
+                    </div>
+                    <div class="repo">
+                        <a href="https://github.com/jddlwlr/You-Lucky-Dog" target="_blank">
+                            <h3>Link to GitHub Repository</h3>
+                        </a>
+                    </div>
+                        <a href="#">
+                            <img id="img-highlight"  src="./Images/tablet.jpg" alt="Highlighted Project"/>
                        </a>
 
                 </section>
 
-                <section class="work">
-                    <h3>Weather App</h3>
-
-                    <a href="https://mel-ificent.github.io/WeatherApp/" target="_blank">
-                        <img id="img-proj-one" onmouseover="projOneImg()" onmouseout="projOneImgReset()" src="./Images/keyboard2.jpg" alt="Project One"/>
+                <section class="work" onmouseover="projOneImg()" onmouseout="projOneImgReset()" >
+                    <div class="title">
+                        <h2>Weather App</h2>
+                    </div>
+                    <div class="deployedLink">
+                        <a href="https://mel-ificent.github.io/WeatherApp/" target="_blank">
+                            <h3>Link to Deployed Application</h3>
+                        </a>
+                    </div>
+                    <div class="repo">
+                        <a href="https://github.com/mel-ificent/WeatherApp" target="_blank">
+                            <h3>Link to GitHub Repository</h3>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <img id="img-proj-one" src="./Images/keyboard2.jpg" alt="Project One"/>
                     </a>
 
                 </section>
                 <section class="work">
-                    <h3>Sample Work 3</h3>
+                    <h3 class="title">Future Work</h3>
                     <a href="#">
                         <img src="./Images/paint2.jpg" alt="placeholder image1"/>
                     </a>
 
                 </section>
                 <section class="work">
-                    <h3>Sample Work 4</h3>
+                    <h3 class="title">Future Work</h3>
                     <a href="#">
                         <img src="./Images/CSSGradient.jpg" alt="placeholder image1"/>
                     </a>
@@ -114,7 +136,7 @@
                 </section>
 
                 <section class="work">
-                    <h3>Sample Work 5</h3>
+                    <h3 class="title">Future Work</h3>
                     <a href="#">
                         <img src="./Images/pencils.jpg" alt="placeholder image1"/>
                     </a>

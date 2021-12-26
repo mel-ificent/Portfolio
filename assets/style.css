@@ -1,4 +1,5 @@
 
+
 /*global styling */
 *{
     font-family: 'Raleway', sans-serif;
@@ -170,6 +171,8 @@ nav a:hover{
 .work{
     padding:5px;
     flex: 50%;
+    position: relative;
+    text-align: center;
 }
 
 /*the first portfolio item will be larger than the subsequent items*/
@@ -206,13 +209,31 @@ nav a:hover{
 
 
 /*Label styling over each work item*/
-.work h3{
-position:relative;
-display:inline;
-padding:5px;
-top: 40px; left: 30px;
-background-color: rgba(255, 255, 255, 0.6)
 
+
+.work .title{
+position:absolute;
+padding:5px;
+top: 10px; left: 30px;
+background-color: rgba(255, 255, 255, 0.6);
+font-size: 24px;
+
+}
+
+.work .deployedLink{
+    position:absolute;
+    padding:5px;
+    top: 60px; left: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    
+}
+
+ .work .repo{
+    position:absolute;
+    padding:5px;
+    top: 100px; left: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+      
 }
 
 /*styling for the contact section*/
@@ -282,5 +303,12 @@ text-align: center;
 #About{
     flex-direction: column;
   }
+
+.work{
+    padding:5px;
+    flex: 100%;
+    position: relative;
+    text-align: center;
+}
 
 }
