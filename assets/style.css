@@ -1,7 +1,9 @@
 
 /*global styling */
 *{
-   font-family: 'Garamond';
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;;
     line-height:1.5;
 }
 /*define variables*/
@@ -183,11 +185,25 @@ nav a:hover{
 }
 
 /*added some styling when the user hovers over the portfolio items*/
+.img-on{
+    display:none;
+}
+
+.img-on:hover{
+    display:block;
+}
+
+.img-off:hover{
+    display:none;
+}
+
 .work img:hover {
     box-shadow: inset 0px 0px 8px
     var(--mediumcolor), 0px 0px 15px
     var(--mediumcolor);
+
 }
+
 
 /*Label styling over each work item*/
 .work h3{
